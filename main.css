@@ -29,6 +29,10 @@ header nav li a {
     text-decoration: none;
     }
 
+.titulo {
+    padding: 16px;
+}
+
 /* Área de formatação do título h1*/
 header h1,
 section h2,
@@ -37,8 +41,14 @@ form button {
     font-family: "Kanit", sans-serif;
 }
 
-header h1 {
+header h1{
     color: #f0f0f0;
+    letter-spacing: 1em;
+}
+header h2 {
+     font-size: 0.78em;
+     color: #f0f0f0;
+     display: block;
 }
 
 /* Área de configuração do alinhamento dos itens no cabeçalho*/
@@ -88,14 +98,16 @@ section {
 }
 /* Configuração do parágrafo dentro de section*/
 section p {
+    padding: 8px;
     margin-bottom: 8px;
     text-align: justify;
+    font-size: 1.2em;
 }
 
 /* Configuração da foto do perfil*/
 .perfil_foto {
     margin-right: 32px;
-    height: 700px;
+    height: 500px;
 }
 
 /* Área de configuração da fonte do google*/

@@ -1,39 +1,38 @@
-/* Área de reset da página*/
+/*Área de reset da página*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Área de estilo do cabeçalho header*/
+/*Área de configuração da fonte dos textos para toda a página*/
+body, input, textarea {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/*Área de estilo do cabeçalho header*/
 header {
     padding: 16px 0;
     background-color: #390089;
 }
-
-body, input, textarea {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-/* Colocar os  links lado  a lado*/
+/*Colocar os  links lado  a lado*/
 header nav li {
 display: inline;
 margin-left: 16px;
 font-size: 18px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
-/* Área de formatação do link a*/
+/*Área de formatação do link a*/
 header nav li a {
     display: inline;
     margin-left: 16px;
     color: #f0f0f0;
     text-decoration: none;
     }
-
+/*Área de configuração do bloco titulo e subtítulo*/
+/*Estão dentro de uma div para ficarem um abaixo do outro*/
 .titulo {
     padding: 16px;
 }
-
-/* Área de formatação do título h1*/
+/*Área de formatação do título h1*/
 header h1,
 section h2,
 section h3,
@@ -45,13 +44,14 @@ header h1{
     color: #f0f0f0;
     letter-spacing: 1em;
 }
+
 header h2 {
      font-size: 0.78em;
      color: #f0f0f0;
      display: block;
 }
 
-/* Área de configuração do alinhamento dos itens no cabeçalho*/
+/*Área de configuração do alinhamento dos itens no cabeçalho*/
 header .container,
 section .container {
     display: flex;
@@ -59,28 +59,22 @@ section .container {
     justify-content: space-between;
 }
 
-/* Área de estilo do Container*/
+/*####################################*/
+/*###### Área da página ##############*/
+
+/*Área de estilo do Container*/
 .container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
 
+/*Área de configuração da section válido para todas as seções*/
 section {
     padding: 24px 0;
 }
 
-/* Área de configuração da lista de marcas*/
-.brands-list img {
-    height: 50px;
-}
-
-.brands-list li {
-    display: inline;
-    margin-right: 8px;
-}
-
-/* Área de configuração do section*/
+/*Área de configuração do section*/
 section .container {
     align-items: flex-start;
 }
@@ -96,7 +90,7 @@ section h2 {
 section {
     color: #390089;
 }
-/* Configuração do parágrafo dentro de section*/
+/*Configuração do parágrafo dentro de section*/
 section p {
     padding: 8px;
     margin-bottom: 8px;
@@ -104,13 +98,13 @@ section p {
     font-size: 1.2em;
 }
 
-/* Configuração da foto do perfil*/
+/*Configuração da foto do perfil*/
 .perfil_foto {
     margin-right: 32px;
     height: 500px;
 }
 
-/* Área de configuração da fonte do google*/
+/*Área de configuração da fonte do google*/
 .kanit-thin {
     font-family: "Kanit", sans-serif;
     font-weight: 100;

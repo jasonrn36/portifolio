@@ -64,8 +64,8 @@ section .container {
 
 /*Área de estilo do Container*/
 .container {
+    display: grid;
     max-width: 1280px;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -102,6 +102,24 @@ section p {
 .perfil_foto {
     margin-right: 32px;
     height: 500px;
+}
+
+.servicos h1{
+    margin-bottom: 16px;
+}
+
+#secao-jovem {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    column-gap: 15px;
+}
+#secao-jovem img {
+    max-width: 100%;
+}
+
+.descricao h2,
+.descricao p {
+    padding: 8px;
 }
 
 /*Área de configuração da fonte do google*/

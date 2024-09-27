@@ -90,31 +90,24 @@
                 </div>
                 <div class="contact">
                     <h3>Fale conosco</h3>
-                    <form action="https://api.staticforms.xyz/submit" method="POST">
-                        <input type="text" placeholder="Seu nome" required />
-                        <input type="email" placeholder="Seu email" required />
-                        <input type="tel" placeholder="Seu tel" />
-                        <textarea type="text" placeholder="Sua mensagem"></textarea>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="a4857e9f-8c0b-4573-8c4a-ddb8c8d99d82">
+                        <input type="text" name="name" placeholder="Digite seu nome" required />
+                        <input type="text" name="email" placeholder="Digite seu email" required />
+                        <input type="text" name="phone" placeholder="Digite seu telefone" />
+                        <textarea name="message" placeholder="Escreva sua mensagem"></textarea>
+                        <input type="hidden" name="replyTo" value="@"> <!-- Obrigatório -->
+                        <input type="hidden" name="redirectTo" value="https://madipon.vercel.app/thanks.html">
                         <button type="submit">Enviar</button>
                         <button type="reset">Limpar</button>
-                        <input type="hidden" name="accessKey" value="a4857e9f-8c0b-4573-8c4a-ddb8c8d99d82">
-                        <input type="hidden" name="redirectTo" value="https://madipon.vercel.app/thanks.html">
                     </form>
                 </div>
                 <div>
                     <h3>Me acompanhe nas redes sociais</h3>
                     <ul class="social-links">
                         <li>
-                            <a href="#" alt="Nos acompanhe no facebook">
+                            <a href="https://www.facebook.com/profile.php?id=61566542212942&locale=pt_BR" alt="Nos acompanhe no facebook">
                                 <img src="./facebook.png" />facebook</a>
-                        </li>
-                        <li>
-                            <a href="#" alt="Nos acompanhe no instagram">
-                                <img src="./instagram.png" />instagram</a>
-                        </li>
-                        <li>
-                            <a href="#" alt="Nos acompanhe no Youtube">
-                                <img src="./youtube.png" />Youtube</a>
                         </li>
                     </ul>
                 </div>

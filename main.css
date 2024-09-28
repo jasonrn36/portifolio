@@ -52,8 +52,7 @@ header h2 {
 }
 
 /*Área de configuração do alinhamento dos itens no cabeçalho*/
-header .container,
-section .container {
+header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,16 +63,18 @@ section .container {
 
 /*Área de estilo do Container*/
 .container {
-    display: grid;
+    display: block;
     max-width: 1280px;
     margin: 0 auto;
 }
-
+.sobre {
+    display: flex;
+    flex-direction: row;
+}
 /*Área de configuração da section válido para todas as seções*/
 section {
     padding: 24px 0;
 }
-
 /*Área de configuração do section*/
 section .container {
     align-items: flex-start;
@@ -195,4 +196,90 @@ footer {
     background-color: #390089;
     color: #f0f0f0;
     padding: 16px 0;
+}
+
+/* Modo Portrait*/
+@media screen and (max-width: 640px) {
+
+/*Área de configuração header para deixar tudo uma abaixo do outro*/
+    header > .container {
+        display: block;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    header h1{
+        text-align: center;
+        font-size: 2em;
+        margin-left: 30px;
+        color: #f0f0f0;
+        letter-spacing: 1em;
+    }
+    
+    header h2 {
+        display: block;
+        text-align: center;
+        font-size: 0.78em;
+        color: #f0f0f0;
+
+    }
+    
+    /*Colocar os  links lado  a lado*/
+    header nav li {
+    display: inline;
+    margin-left: 8px;
+    font-size: 18px;
+    
+    }
+/*Área de configuração sobre para deixar tudo uma abaixo do outro*/
+    .section {
+        display: flex;
+    }
+
+    .container {
+        background-color: red;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container img {
+        height: 50vh;
+    }
+    #servicos-madipon {
+        display: block;
+    }   
+    #segunda-secao,
+    .contact-methods {
+        display: block;
+    }
+
+    /*Área de configuração da section válido para todas as seções*/
+    section {
+    padding: 8px 0;
+    }
+    /*Área de configuração do section*/
+    section .container {
+    align-items: flex-start;
+    }
+
+    section,
+    section h1,
+    section h2,
+    section p {
+    padding: 8px 0;
+    margin: 0 auto;
+    }
+
+    section h1,
+    section h2,
+    section p {
+    margin-bottom: 16px;
+    }
+
+    section {
+    color: #390089;
+    }
+    
+
+
 }
